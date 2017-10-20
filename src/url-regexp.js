@@ -1,5 +1,5 @@
 const escapeStringRegexp = require('escape-string-regexp')
-const validate = require('./validate')
+const { validateUrl } = require('./validate')
 
 /**
  * Convert url scheme to a RegExp
@@ -15,7 +15,7 @@ module.exports = function urlRegExp(url, options) {
     options = {}
   }
   
-  validate(url)
+  validateUrl(url)
   const pattern = options.asterisksRequired ? '(.+)' : '(.*)'
   const escaped = escapeStringRegexp(url).replace(/\\\*/g, pattern)
   return new RegExp('^' + escaped + '$', options.caseSensitive ? undefined : 'i')

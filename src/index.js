@@ -1,26 +1,6 @@
 const urlRegExp = require('./url-regexp')
 const he = require('he')
-
-class ValidationError extends Error { }
-
-function validate(data, prop) {
-  if (!data[prop]) {
-    throw new ValidationError(`Parameter '${prop}' is required.`)
-  }
-}
-
-function validateNumber(data, prop) {
-  const value = data[prop]
-  if (value === '' || isNaN(value) || !isFinite(value) || value < 0) {
-    throw new ValidationError(`Parameter '${prop}' is required and must be a valid number.`)
-  }
-}
-
-function validateData(data, prop) {
-  validate(data, prop)
-  validateNumber(data, 'width')
-  validateNumber(data, 'height')
-}
+const { ValidationError, validateData } = require('./validate')
 
 function makeResponse(type, data) {
   return {
