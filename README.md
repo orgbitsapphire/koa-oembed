@@ -49,7 +49,7 @@ import oembed from 'koa-oembed'
 const middleware = oembed(urlScheme, /* URL scheme. May include wildcards. */
   options: { /* Optional options object */
     format: 'json'|'xml', /* Indicates a fixed api format. */
-    asterisksRequired: boolean, /* Indicates that * patterns are mandatory. Defaults to false. */
+    asterisksRequired: boolean, /* Indicates that matched * patterns must contain at least one character. Defaults to false. */
     caseSensitive: boolean /* Indicates that the search should be case sensitive. Defaults to false. */
   })
 ```
