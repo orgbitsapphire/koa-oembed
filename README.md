@@ -59,7 +59,7 @@ const middleware = oembed(urlScheme, /* URL scheme. May include wildcards. */
 ```js
 ctx.oembed = {
   match: [], /* Regex match object. */
-  format: 'json'|'xml', / Format of response. */
+  format: 'json'|'xml', /* Format of response. */
   photo({ url, width, height, ...data }), /* Send photo response. */
   video({ html, width, height, ...data }), /* Send video response. */
   link({ ...data }), /* Send link response with any data. */
