@@ -6,8 +6,8 @@ const { validateUrl } = require('./validate')
  * Example: http://www.flickr.com/photos/*&#47;foo/ -> new RegExp('^http://www\\.flickr\\.com/photos/(.*)/foo/$')
  * @param {string} url - URL scheme
  * @param {Object} options - Match options.
- * @param {string} options.asterisksRequired - Indicates that * patterns are mandatory. Defaults to false.
- * @param {string} options.caseSensitive - Indicates that the search should be case sensitive. Defaults to false.
+ * @param {boolean} options.asterisksRequired - Indicates that * patterns are mandatory. Defaults to false.
+ * @param {boolean} options.caseSensitive - Indicates that the search should be case sensitive. Defaults to false.
  * @returns {RegExp} - Pattern converted to regular expression.
  */
 module.exports = function urlRegExp(url, options) {
