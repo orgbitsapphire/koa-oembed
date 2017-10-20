@@ -15,5 +15,13 @@
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
     "he": "^1.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orgbitsapphire/koa-oembed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orgbitsapphire/koa-oembed/issues"
+  },
+  "homepage": "https://github.com/orgbitsapphire/koa-oembed#readme"
 }
