@@ -10,7 +10,7 @@
     "koa",
     "oEmbed"
   ],
-  "author": "Bitsapphire (https://bitsapphire.com)",
+  "author": "Bitsapphire <info@bitsapphire.com> (https://bitsapphire.com)",
   "license": "MIT",
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
