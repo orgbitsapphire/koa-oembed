@@ -6,6 +6,7 @@ Koa middleware for creating [oEmbed](https://oembed.com/) endpoints.
 
 >oEmbed is a format for allowing an embedded representation of a URL on third party sites. The simple API allows a website to display embedded content (such as photos or videos) when a user posts a link to that resource, without having to parse the resource directly.
 
+
 ## Usage
 
 API endpoints and URL schemes are provided in pairs, such that one instance of the middleware serves exactly one URL scheme. You can read more about this in the [specification](https://oembed.com/#section2.1).
@@ -36,8 +37,8 @@ router.get('/oembed', oembed('http://example.com/photos/*'), function (ctx) {
     provider_url: 'http://example.com'
   })
 })
-
 ```
+
 
 ## API
 
@@ -63,7 +64,7 @@ ctx.oembed = {
   photo({ url, width, height, ...data }), /* Send photo response. */
   video({ html, width, height, ...data }), /* Send video response. */
   link({ ...data }), /* Send link response with any data. */
-  rich({ html, width, height, ...data }), /* Send rich content response. */
+  rich({ html, width, height, ...data }) /* Send rich content response. */
 }
 ```
 
