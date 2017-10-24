@@ -1,11 +1,10 @@
-# koa-oembed
+# koa-oembed ![](https://img.shields.io/npm/dm/koa-oembed.svg?style=flat-square) ![](https://img.shields.io/npm/l/koa-oembed.svg?style=flat-square)
 
 `npm install koa-oembed --save`
 
 Koa middleware for creating [oEmbed](https://oembed.com/) endpoints.
 
 >oEmbed is a format for allowing an embedded representation of a URL on third party sites. The simple API allows a website to display embedded content (such as photos or videos) when a user posts a link to that resource, without having to parse the resource directly.
-
 
 ## Usage
 
@@ -38,7 +37,6 @@ router.get('/oembed', oembed('http://example.com/photos/*'), function (ctx) {
   })
 })
 ```
-
 
 ## API
 
