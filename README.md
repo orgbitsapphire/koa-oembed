@@ -1,4 +1,4 @@
-# koa-oembed ![](https://img.shields.io/npm/dm/koa-oembed.svg?style=flat-square) ![](https://img.shields.io/npm/l/koa-oembed.svg?style=flat-square)
+# koa-oembed ![](https://img.shields.io/npm/dm/koa-oembed.svg?style=flat-square) ![](https://img.shields.io/npm/l/koa-oembed.svg?style=flat-square) <a href="https://communityinviter.com/apps/koa-js/koajs" rel="KoaJs Slack Community">![KoaJs Slack](https://img.shields.io/badge/Koa.Js-Slack%20Channel-Slack.svg?longCache=true&style=for-the-badge)</a>
 
 `npm install koa-oembed --save`
 
